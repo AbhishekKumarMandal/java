@@ -51,7 +51,7 @@ public class signin extends HttpServlet {
 				e.printStackTrace();
 			}
 			
-			Connection con=(Connection)DriverManager.getConnection("jdbc:mysql://localhost:3306/project","root","abhi@123");
+			Connection con=(Connection)DriverManager.getConnection("jdbc:mysql://localhost:3306/DATABASE-NAME","USERNAME","PASSWORD");
 			Statement smt=con.createStatement();	
 			String query="insert into account values('"+name+"',"+"'"+dept+"','"+desig+"','"+mail+"',"+"'"+pass+"');";
 			smt.executeUpdate(query);
