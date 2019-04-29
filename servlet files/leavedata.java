@@ -69,7 +69,7 @@ public class leavedata extends HttpServlet {
 			{
 				e.printStackTrace();
 			}
-			Connection con=(Connection)DriverManager.getConnection("jdbc:mysql://localhost:3306/project","root","abhi@123");
+			Connection con=(Connection)DriverManager.getConnection("jdbc:mysql://localhost:3306/DATABASE-NAME","USERNAME","PASSWORD");
 			Statement smt=con.createStatement();
 			String query="insert into leaveapp (email,name,dept,days,frm,too,lve,text,status) values('"+email+"','"+name+"','"+dept+"',"+days+",'"+from+"','"+to+"','"+leave+"','"+text+"','processing');";
 			int i=smt.executeUpdate(query);
