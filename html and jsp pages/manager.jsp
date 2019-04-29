@@ -54,7 +54,7 @@ javax.servlet.http.HttpServletResponse,java.io.*" %>
 try
 {
 	Class.forName("com.mysql.jdbc.Driver");
-	Connection con=(Connection)DriverManager.getConnection("jdbc:mysql://localhost:3306/project","root","abhi@123");
+	Connection con=(Connection)DriverManager.getConnection("jdbc:mysql://localhost:3306/DATABASE-NAME","USERNAME","PASSWORD");
 	Statement smt =con.createStatement();
 	//String query="select * from leaveapp where status='processing' and dept="+"'"+request.getAttribute("dept")+"';";
 	String query="select * from leaveapp where status='processing' and dept="+"'"+request.getParameter("dept")+"';";
