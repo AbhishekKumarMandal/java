@@ -57,7 +57,7 @@ public class result extends HttpServlet {
 			{
 				e.printStackTrace();
 			}
-			Connection con=(Connection)DriverManager.getConnection("jdbc:mysql://localhost:3306/project","root","abhi@123");
+			Connection con=(Connection)DriverManager.getConnection("jdbc:mysql://localhost:3306/DATABASE-NAME","USERNAME","PASSWORD");
 			Statement smt=con.createStatement();
 			String query="update leaveapp set status='"+btn+"' where id="+i+";";
 			int j=smt.executeUpdate(query);
