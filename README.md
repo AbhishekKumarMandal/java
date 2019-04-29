@@ -1,5 +1,6 @@
 # java
-Leave Mangement System using jsp and Servlet <br> 
-Server : APACHE TOMCAT version 7  <br>
-Database : <b>MYSQL version 8.0.15</b> <br>
-mysql-connector-java-8.0.15.jar for JDBC
+<h1><b>Leave Mangement System using jsp and Servlet</b></h1> <br> 
+<h1>Server :</h1> <h3><b>APACHE TOMCAT version 7</b></h3>  <br>
+<h1>Database :</h1> <h3><b>MYSQL version 8.0.15</b></h3> <br>
+<h3><b>mysql-connector-java-8.0.15.jar for JDBC</b></h1>
+<h1>TABLE NAMES USED IN MYSQL:</h1>&nbsp;&nbsp;&nbsp;<h2><b>account,leaveapp</b></h2> 
