@@ -55,7 +55,7 @@ public class login extends HttpServlet {
 			{
 				e.printStackTrace();
 			}
-			Connection con=(Connection)DriverManager.getConnection("jdbc:mysql://localhost:3306/project","root","abhi@123");
+			Connection con=(Connection)DriverManager.getConnection("jdbc:mysql://localhost:3306/DATABASE-NAME","USERNAME","PASSWORD");
 			Statement smt=con.createStatement();
 			String query="select * from account where email='"+email+"' and password='"+password+"';";
 			ResultSet rs=smt.executeQuery(query);
